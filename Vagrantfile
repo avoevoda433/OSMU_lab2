@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
   echo 'server {
   listen 80;
   location / {
-    proxy_pass http://192.168.33.11/;
+    proxy_pass http://192.168.55.11/;
   }
 }' | sudo tee /etc/nginx/sites-available/default > /dev/null
   sudo service nginx restart
